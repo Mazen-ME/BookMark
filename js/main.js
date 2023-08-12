@@ -54,7 +54,7 @@ function displayData() {
                                 ${arrData[i].bookName}
                             </h5>
                         </td>
-                        <td ><a href='http://${arrData[i].bookUrl}' class="btn px-4 btn-outline-info border-2 text-black">Visit</a></td>
+                        <td ><a href='http://www.${arrData[i].bookUrl}' class="btn px-4 btn-outline-info border-2 text-black">Visit</a></td>
                         <td ><button onclick=" updateData(${i})" class="btn btn-outline-warning text-black px-3  border-2">Update</button></td>
                         <td><button onclick="deleteData(${i})"  class="btn px-3 btn-danger ">Delete</button></td>
                     </tr>`
@@ -75,7 +75,7 @@ function searchData(val) {
                                 ${arrData[i].bookName}
                             </h5>
                         </td>
-                        <td ><a href='http://${arrData[i].bookUrl}' class="btn px-4 btn-outline-info border-2 text-black">Visit</a></td>
+                        <td ><a href='http://www.${arrData[i].bookUrl}' class="btn px-4 btn-outline-info border-2 text-black">Visit</a></td>
                         <td ><button class="btn btn-outline-warning text-black px-3  border-2">Update</button></td>
                         <td><button onclick="deleteData(${i})"  class="btn px-3 btn-danger ">Delete</button></td>
                     </tr>`
