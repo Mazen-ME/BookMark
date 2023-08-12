@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>stars</title>
+</head>
+
+<body>
+
+    <div class="container  overflow-auto">
+        <h2 class="mt-5">
+            BookMark
+        </h2>
+    </div>
+
+    <div class="book my-4 px-4 ">
+        <hr class="hr ">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-9 col-sm-9">
+                <div class="container con p-5 rounded-2">
+                    <div class="txt text-center mt-4">
+                        <h1>Bookmark your favorite sites</h1>
+                        <input placeholder="Site Name" id="siteName" class="form-control my-5 border-1 border-info"
+                            type="text">
+
+                        <input placeholder="Site URL" id="siteUrl" class="form-control border-1 border-info"
+                            type="text">
+                        <div id="valid" class="red d-none w-25 mx-auto">
+                            <h6>All data Required</h6>
+                        </div>
+                        <div class="bt d-flex justify-content-around align-items-center flex-wrap">
+                            <button type="submit" id="submit" class="btn btn-info  mt-5 p-2 px-5 ">Add</button>
+                            <button onclick="deleteAllData()" class="btn mt-5  p-2 px-4  btn-danger ">Delete
+                                All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr">
+    </div>
+
+
+    <div class="added row ">
+        <div class="form col-md-9 t mx-auto pt-5  d-flex mb-5 justify-content-center align-items-center">
+            <label for="search" class="mx-2 btn btn-outline-warning px-3 py-2"><i
+                    class="fa-solid fa-magnifying-glass fa-beat fa-lg"></i> </label>
+            <input oninput="searchData(this.value)" class="form-control w-75 border-info" id="search" type="text"
+                placeholder="Search">
+        </div>
+        <div class="col-md-9 t mx-auto  px-5 ">
+            <div class="tt table-responsive ">
+
+                <table class="table table-hover table-light text-center table-bordered border-dark-subtle ">
+                    <thead class="">
+                        <th>Index</th>
+                        <th>Site Name</th>
+                        <th>Visit</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </thead>
+
+                    <tbody class="ms-3 w-100" id="urlName">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/Jquery.c.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

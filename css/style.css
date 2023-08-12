@@ -1,0 +1,30 @@
+
+.hr {
+    height: 5px;
+   border: solid 2px  rgba(4, 243, 231, 0.987);
+   background-color: rgb(0, 45, 150);
+   border-radius: 2px;
+}
+
+.con {
+    background-color: rgb(233, 233, 233);
+}
+
+.btnd {
+    padding: 0 !important;
+    height: 60px !important;
+    width: 60px;
+    
+}
+
+
+.red {
+    
+    color: red;
+    margin-top: 15px;
+    padding: 7px 0px;
+    padding-top: 15px;
+    border-radius: 10px;
+    border: solid 1px red;
+    background-color: rgb(234, 233, 233);
+}
